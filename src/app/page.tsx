@@ -212,19 +212,3 @@ const TransactionDashboard = () => {
 };
 
 export default TransactionDashboard;
-
-// const [transactions, setTransactions] = useState<Transaction[]>(() => {
-//   const stored =
-//     typeof window !== "undefined"
-//       ? localStorage.getItem("transactions")
-//       : null;
-//   if (stored) {
-//     return JSON.parse(stored);
-//   }
-//   const x =
-//     typeof window !== "undefined"
-//       ? localStorage.setItem("transactions", JSON.stringify(initialData))
-//       : null;
-
-//   return x ? initialData : initialData;
-// });

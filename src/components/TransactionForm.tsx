@@ -46,7 +46,7 @@ const TransactionForm = ({
             onChange={(e) =>
               setFormData({ ...formData, description: e.target.value })
             }
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
             placeholder="Enter transaction description"
           />
@@ -64,7 +64,7 @@ const TransactionForm = ({
             onChange={(e) =>
               setFormData({ ...formData, amount: e.target.value })
             }
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
             placeholder="0.00"
           />
